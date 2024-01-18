@@ -1,11 +1,25 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const mongoose = require('mongoose')
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
+require("dotenv").config()
+
+// connect to db
+mongoose
+    .connect(process.env.MONGODB_URI)
+    .then(() => console.log('Connected to db'))
+    .catch((error) => console.log('Failed to connect', error));
+
+// health api
+app.get('/health', (req, res) => {
+    res.json({
+        service: 'Job Listing Server',
+        status: 'Active',
+        time: new Date(),
+    });
 })
 
+const port = process.env.PORT || 3000
 app.listen(port, (err) => {
     if (!err) {
         console.log(`Example app listening on port ${port}`)
