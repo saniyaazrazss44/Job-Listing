@@ -1,0 +1,122 @@
+.login_page_main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_login_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: start;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 5rem;
+}
+
+.login_first_div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.login_second_div_main {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+
+.login_second_div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.login_second_div input {
+    border: 2px solid #C2C2C2;
+    border-radius: 5px;
+    padding: 10px;
+    height: 4rem;
+    width: 100%;
+}
+
+.login_second_div input::placeholder {
+    color: #525252;
+    font-size: 1rem;
+}
+
+.login_third_div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.checkbox_div {
+    color: #525252;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.checkbox_div input {
+    color: #525252;
+}
+
+.btnCreateAccount {
+    background-color: #ED5353;
+    border-style: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.signInText {
+    color: #525252;
+}
+
+.signInText span {
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-style: solid;
+}
+
+.login_login_bg_main {
+    width: 100%;
+}
+
+.login_login_bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/images/registerPageBg.png');
+    background-size: 100% 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.login_login_bg h3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
